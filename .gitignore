@@ -1,7 +1,7 @@
-preferenceloader/wrongpasscode/theos
-preferenceloader/wrongpasscode/wrongpasscode/theos
-preferenceloader/wrongpasscode/wrongpasscode/obj/
 preferenceloader/wrongpasscode/_/
+preferenceloader/wrongpasscode/theos
 preferenceloader/wrongpasscode/.theos/
 preferenceloader/wrongpasscode/obj/
+preferenceloader/wrongpasscode/obj/
+preferenceloader/wrongpasscode/.theos/
 *.deb
