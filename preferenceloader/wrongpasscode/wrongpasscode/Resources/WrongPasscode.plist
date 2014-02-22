@@ -16,7 +16,7 @@
 			<key>default</key>
 			<false/>
 			<key>defaults</key>
-			<string>com.sassoty.wrongpasscode~prefs</string>
+			<string>com.sassoty.wrongpasscode</string>
 			<key>key</key>
 			<string>enabled</string>
 			<key>label</key>

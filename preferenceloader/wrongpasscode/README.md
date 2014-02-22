@@ -13,7 +13,7 @@ Instructions to build this (Explanation down below)
 * Run nic.pl file again
 * Create a preferencebundle (download template from templates folder)
 * Project Name: SAME AS ABOVE
-* Package Name: SAVE AS ABOVE + ~prefs (at the end, so, com.sassoty.wrongpasscode~prefs)
+* Package Name: SAME AS ABOVE
 * Author Name: SAME AS ABOVE
 
 * Copy contents of Tweak.xm into your Tweak.xm
@@ -55,22 +55,25 @@ Gets contents of settings file, so we can view what the user has turned on or of
 Line 8: BOOL isEnabled = [[prefs objectForKey:@"enabled"] boolValue];
 Get boolean value (true, false, yes, no, 1, 0, on, off) of switch in settings to enable the tweak
 
-Line 10: if(!%orig && isEnabled){
+Line 9: BOOL isSuccessful = %orig;
+This makes sure I don't use %orig twice.
+
+Line 11: if(!%orig && isEnabled){
 Check if user typed in the wrong passcode and check if the tweak is enabled (defined above). %orig runs the original function without any of the code you added. This function returns a boolean to check if the password that the user typed in is write or wrong. ! in code means oppposite. So the opposite of the user getting it right (which would be %orig), would be the user getting it wrong.
 
-Line2 11-13: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WrongPasscode" message:[NSString stringWithFormat:@"You entered: %@", passcode] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+Line2 12-14: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WrongPasscode" message:[NSString stringWithFormat:@"You entered: %@", passcode] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 [alert show];
 [alert release];
 Show alert telling the user that they got the password wrong.
 
-Line 16: [prefs release];
+Line 17: [prefs release];
 Tell the code that we don't need to use the variable "prefs" (defined above) anymore.
 
-Line 18: return %orig;
+Line 19: return %orig;
 Return the original function so we don't lock out the user
 
-Line 20: }
+Line 21: }
 End the function
 
-Line 22: %end
+Line 23: %end
 Stop hooking into that class
