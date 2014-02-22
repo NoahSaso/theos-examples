@@ -1,0 +1,9 @@
+Package: com.sassoty.wrongpasscode
+Name: WrongPasscode
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Sassoty <noahsaso@gmail.com>
+Author: Sassoty <noahsaso@gmail.com>
+Section: Tweaks
