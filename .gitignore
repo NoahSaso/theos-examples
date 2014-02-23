@@ -1,7 +1,6 @@
-preferenceloader/wrongpasscode/_/
-preferenceloader/wrongpasscode/theos
-preferenceloader/wrongpasscode/.theos/
-preferenceloader/wrongpasscode/obj/
-preferenceloader/wrongpasscode/obj/
-preferenceloader/wrongpasscode/.theos/
+theos
+_
+obj
+.theos
 *.deb
+*.DS_Store

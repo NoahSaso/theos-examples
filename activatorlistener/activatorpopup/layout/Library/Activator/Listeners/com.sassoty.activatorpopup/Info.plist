@@ -1,0 +1,4 @@
+{title = "ActivatorPopup";
+    description = "Create a popup";
+    "compatible-modes" = ("springboard", "application", "lockscreen");}
+

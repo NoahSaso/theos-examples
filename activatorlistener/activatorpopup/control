@@ -1,0 +1,9 @@
+Package: com.sassoty.activatorpopup
+Name: ActivatorPopup
+Depends: mobilesubstrate, libactivator
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome Activator listener!
+Maintainer: Sassoty <noahsaso@gmail.com>
+Author: Sassoty <noahsaso@gmail.com>
+Section: Tweaks
