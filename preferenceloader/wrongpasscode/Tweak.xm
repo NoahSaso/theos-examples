@@ -1,8 +1,9 @@
+#define kSettingsPath [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/com.sassoty.wrongpasscode.plist"]
+
 %hook SBDeviceLockController
 
 - (BOOL)attemptDeviceUnlockWithPassword:(NSString *)passcode appRequested:(BOOL)requested {
 
-	NSString *settingsPath = @"/var/mobile/Library/Preferences/com.sassoty.wrongpasscode.plist";
 	NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsPath];
 
 	BOOL isEnabled = [[prefs objectForKey:@"enabled"] boolValue];

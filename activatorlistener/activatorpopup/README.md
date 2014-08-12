@@ -10,6 +10,7 @@ Instructions to build this (Explanation down below)
 * cd into that new directory (same as project name, but all lower case)
 
 * Copy libactivator.dylib (in this folder: https://github.com/Sassoty/theos-examples/tree/master/lib) into /var/theos/lib (/opt/theos/lib on a mac)
+* Download the zip file called libactivator.zip and copy the folder in the zip file to /var/theos/include (/opt/theos/include on a Mac)
 
 * Copy contents of Listener.xm into your Listener.xm
 * Copy Lines 10, and 11 from Makefile into yours
